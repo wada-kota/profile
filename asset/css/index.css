@@ -1,0 +1,471 @@
+@charset "UTF-8";
+/* CSS Document */
+.section-top {
+  width: 100%;
+  position: relative;
+}
+.top-text {
+  width: 100%;
+  height: 410px;
+  padding: 50px 0 0 300px;
+  background-image: url("../img/top/top-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+}
+.top-text h2 {
+  margin-bottom: 20px;
+  font-size: 3.0rem;
+  color: #fff;
+  letter-spacing: 0.3rem;
+}
+.top-text h3 {
+  margin: 0 0 15px 50px;
+  font-size: 2.4rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+.top-text h4 {
+  margin-left: 110px;
+  font-size: 2.0rem;
+  color: #ffe34d;
+  letter-spacing: 0.2rem;
+}
+.top-menu {
+  width: 200px;
+  height: 410px;
+  padding: 20px 0 0 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.top-menu h3 {
+  margin-bottom: 10px;
+}
+.top-menu a {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  display: inline-block;
+  text-decoration: none;
+}
+.top-menu-logo {
+  width: 160px;
+  margin-bottom: 35px;
+}
+.about-box {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 25px;
+}
+.work-box {
+  width: 100%;
+  height: 120px;
+}
+.top-menu-icon {
+  width: 90px;
+  margin-left: 30px;
+}
+.top-menu-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 24px;
+}
+.top-menu-btn span {
+  width: 27px;
+  height: 3px;
+  margin: 0 auto 6px;
+  display: block;
+  background-color: #fff;
+  border-radius: 1px;
+}
+.top-btn-bar.active {
+  background-color: #20a7fe;
+}
+.top-btn-bar.active:nth-of-type(1) {
+  transform: translateY(6px) rotate(-45deg);
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+.top-btn-bar.active:nth-of-type(2) {
+  opacity: 0;
+}
+.top-btn-bar.active:nth-of-type(3) {
+  transform: translateY(-6px) rotate(43deg);
+  position: absolute;
+  top: 12px;
+  left: 6px;
+}
+.parallax-bg {
+  width: 100%;
+  height: 150px;
+  background-image: url("../img/parallax/parallax.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: 50% 0%;
+}
+@media(max-width:699px) {
+  .top-text {
+    padding: 30px 0 0 24px;
+  }
+  .top-text h2 {
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  }
+  .top-text h3 {
+  margin: 0 0 10px 30px;
+  font-size: 2.2rem;
+}
+  .top-text h4 {
+  margin-left: 80px;
+  font-size: 2.0rem;
+}
+  .top-menu {
+    width: 100%;
+    padding: 80px 0 0 0;
+    text-align: center;
+    display: none;
+  }
+  .top-menu.active {
+    display: block;
+  }
+  .top-menu-logo {
+    display: none;
+  }
+  .top-menu-icon {
+    margin: 0;
+  }
+  .top-menu-btn {
+    display: block;
+    z-index: 1;
+  }
+}
+@media(max-width:1200px) {
+  .parallax-bg {
+    background-position: 50% 15%;
+  }
+}
+@media(max-width:699px) {
+  .parallax-bg {
+    background-position: 50% 45%;
+  }
+}
+.section-about {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 140px 50px;
+}
+.section-about h2 {
+  margin-bottom: 60px;
+  font-size: 3.0rem;
+  letter-spacing: 0.8rem;
+}
+.about-profiles {
+  padding-left: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-profiles img {
+  width: 200px;
+  height: 200px;
+}
+.about-profiles ul {
+  padding-top: 20px;
+  list-style: none;
+}
+.about-profiles ul li {
+  padding-left: 59px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.parent {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.small-parent {
+  margin-right: 19px;
+  letter-spacing: 2.0rem;
+}
+.big-parent {
+  margin-right: 15px;
+  letter-spacing: 0.2rem;
+}
+.about-message {
+  padding: 50px 0 80px 60px;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+}
+.about-skill {
+  padding: 0 0 50px 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-skill h3 {
+  margin-bottom: 8px;
+  font-size: 2.6rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+.about-skill h4 {
+  margin-bottom: 30px;
+  font-size: 1.9rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+.skill-design, .skill-programming {
+  max-width: 450px;
+  width: 100%;
+}
+.skill-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-wrap img {
+  width: 160px;
+}
+.skill-description {
+  padding-left: 30px;
+}
+.design-description {
+  padding-top: 10px;
+}
+.programming-description {
+  padding-top: 45px;
+}
+.skill-description h5 {
+  font-size: 2.0rem;
+  margin-bottom: 5px;
+}
+.skill-description p {
+  padding-left: 15px;
+}
+.skill-photoshop {
+  color: #1982cb;
+}
+.skill-illustrator {
+  color: #e9811c;
+}
+.wireframe {
+  margin-bottom: 10px;
+}
+.skill-programming h5 {
+  margin-bottom: 20px;
+  color: #09b509;
+}
+.about-study {
+  padding-left: 60px;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+}
+@media(max-width:1200px) {
+  .section-about {
+    padding: 70px 80px 50px;
+  }
+  .section-about h2 {
+    text-align: center;
+  }
+  .about-profiles {
+    padding: 0;
+    text-align: center;
+    display: block;
+  }
+  .about-profiles ul {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .about-message {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px 0 80px;
+  }
+  .about-skill {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+    display: block;
+  }
+  .skill-design {
+    margin-bottom: 50px;
+  }
+  .about-skill h4 {
+    margin-bottom: 20px;
+  }
+  .about-study {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media(max-width:699px) {
+  .section-about {
+    padding: 60px 24px;
+  }
+  .section-about h2 {
+    font-size: 2.4rem;
+  }
+  .about-profiles img {
+    width: 160px;
+    height: 160px;
+  }
+  .about-profiles ul li {
+    padding: 0;
+    font-size: 1.3rem;
+  }
+  .small-parent {
+    margin-right: 9px;
+  }
+  .about-message {
+    font-size: 1.6rem;
+  }
+  .about-message br {
+    display: none;
+  }
+  .about-skill h3 {
+    font-size: 1.9rem;
+  }
+  .about-skill h4 {
+    font-size: 1.6rem;
+  }
+  .skill-wrap img {
+    width: 110px;
+    height: 110px;
+  }
+  .design-description {
+    padding-top: 0;
+  }
+  .programming-description {
+    padding-top: 20px;
+  }
+  .design-icon {
+    margin-top: 13px;
+  }
+  .skill-description h5 {
+    font-size: 1.6rem;
+  }
+  .skill-description p {
+    font-size: 1.4rem;
+  }
+  .wireframe {
+    margin-bottom: 0px;
+  }
+  .about-study {
+    font-size: 1.6rem;
+  }
+  .about-study br {
+    display: none;
+  }
+}
+.parallax-bg2 {
+  width: 100%;
+  height: 150px;
+  background-image: url("../img/parallax/parallax2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: 50% 80%;
+}
+@media(max-width:1200px) {
+  .parallax-bg2 {
+    background-position: 50% 70%;
+  }
+}
+.section-work {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 140px 100px;
+}
+.section-work h2 {
+  margin-bottom: 60px;
+  font-size: 3.0rem;
+  letter-spacing: 0.8rem;
+}
+.work-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-image {
+  width: 420px;
+  height: 100%;
+  padding-left: 60px;
+}
+.work-image a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+.work-image img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  box-shadow: 2px 5px 6px 2px rgba(190,190,190,0.9);
+}
+.work-image p {
+  color: #333;
+  text-align: center;
+}
+.work-description {
+  padding: 10px 0 0 80px;
+}
+.work-manager {
+  margin-bottom: 5px;
+}
+.work-span {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.work-purpose {
+  line-height: 3.0rem;
+}
+@media(max-width:1200px) {
+  .section-work {
+    padding: 80px 80px 100px;
+  }
+  .section-work h2 {
+    text-align: center;
+  }
+  .work-wrap {
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+  .work-image {
+    padding: 0;
+    margin: 0 auto 60px;
+  }
+  .work-description {
+    max-width: 410px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .work-description br {
+    display: none;
+  }
+}
+@media(max-width:699px) {
+  .section-work {
+    padding: 60px 24px;
+  }
+  .section-work h2 {
+    font-size: 2.4rem;
+  }
+  .work-image {
+    width: 327px;
+    height: 180px;
+  }
+  .work-image p {
+    font-size: 1.5rem;
+  }
+  .work-manager, .work-span {
+    font-size: 1.4rem;
+  }
+}
