@@ -1,2 +1,2 @@
 # profile
-## My site is live at [wada-kotaの自己紹介サイト](https://wada-kota.github.io/profile/)
+## My site is live at [https://wada-kota.github.io/profile/](https://wada-kota.github.io/profile/)
